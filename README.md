@@ -86,13 +86,41 @@ For local development you can run:
 npm run dev
 ```
 
+## Testing
+
+Tests are written with [Vitest](https://vitest.dev/) and live in `src/__tests__/`.
+
+| File | Coverage |
+|---|---|
+| `utils.test.ts` | `ok` / `err` response helpers |
+| `planner-service.test.ts` | `PlannerService` — all CRUD operations against a mocked Graph client |
+
+Run the test suite:
+
+```bash
+# Run once
+npm test
+
+# Watch mode (re-runs on file changes)
+npm run test:watch
+
+# With coverage report
+npm run test:coverage
+```
+
+No real Azure credentials are needed to run the tests — the Microsoft Graph client is fully mocked.
+
 ## Project Structure
 
 ```
 src/
   graph-client.ts    # Creates an authenticated Microsoft Graph client
   planner-service.ts # Service implementing Planner CRUD operations
+  utils.ts           # Response helpers (ok / err)
   index.ts           # Entry point — registers tools and starts the MCP server
+  __tests__/
+    utils.test.ts            # Unit tests for response helpers
+    planner-service.test.ts  # Unit tests for PlannerService
 ```
 
 ## Example Prompts
