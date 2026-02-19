@@ -1,4 +1,4 @@
-# Planner MCP Server
+# Microsoft Planner MCP
 
 A small Node.js MCP server that integrates with Microsoft Planner using the Microsoft Graph API.
 
@@ -94,6 +94,7 @@ Tests are written with [Vitest](https://vitest.dev/) and live in `src/__tests__/
 |---|---|
 | `utils.test.ts` | `ok` / `err` response helpers |
 | `planner-service.test.ts` | `PlannerService` — all CRUD operations against a mocked Graph client |
+| `graph-client.test.ts` | `createGraphClient` — env validation and client initialization |
 
 Run the test suite:
 
@@ -121,6 +122,7 @@ src/
   __tests__/
     utils.test.ts            # Unit tests for response helpers
     planner-service.test.ts  # Unit tests for PlannerService
+    graph-client.test.ts     # Unit tests for createGraphClient and auth setup
 ```
 
 ## Example Prompts
