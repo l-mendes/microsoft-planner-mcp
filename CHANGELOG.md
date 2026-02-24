@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [v1.0.2] - 2026-02-24
+
+### Changed
+- feat: Update server name and version in index.ts (b78f7e7)
+- chore(changelog): update for v1.0.1 (48c4f1c)
+
+
 ## [v1.0.1] - 2026-02-24
 
 ### Changed
