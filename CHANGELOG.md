@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [v1.0.1] - 2026-02-24
+
+### Changed
+- feat: update dependencies and fix tests for graph client (1a4c7a7)
+- chore(changelog): update for v1.0.0 (9eb2f99)
+
+
 ## [v1.0.0] - 2026-02-20
 
 ### Changed
