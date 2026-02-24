@@ -12,7 +12,11 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage"
   },
-  "keywords": ["mcp", "microsoft-planner", "graph-api"],
+  "keywords": [
+    "mcp",
+    "microsoft-planner",
+    "graph-api"
+  ],
   "license": "MIT",
   "dependencies": {
     "@azure/identity": "^4.6.0",
@@ -22,9 +26,9 @@
   },
   "devDependencies": {
     "@types/node": "^22.13.4",
-    "@vitest/coverage-v8": "^3.0.0",
+    "@vitest/coverage-v8": "^4.0.18",
     "tsx": "^4.19.3",
     "typescript": "^5.7.3",
-    "vitest": "^3.0.0"
+    "vitest": "^4.0.18"
   }
 }

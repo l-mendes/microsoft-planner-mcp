@@ -106,7 +106,7 @@ describe("createGraphClient", () => {
 
     it("creates TokenCredentialAuthenticationProvider with Graph default scope", async () => {
       const fakeCredential = {};
-      mockClientSecretCredential.mockReturnValueOnce(fakeCredential);
+      mockClientSecretCredential.mockImplementationOnce(function() { return fakeCredential; });
 
       const { createGraphClient } = await import("../graph-client.js");
       createGraphClient();
@@ -119,7 +119,7 @@ describe("createGraphClient", () => {
 
     it("calls Client.initWithMiddleware with the auth provider and returns its result", async () => {
       const fakeAuthProvider = {};
-      mockTokenCredentialAuthenticationProvider.mockReturnValueOnce(fakeAuthProvider);
+      mockTokenCredentialAuthenticationProvider.mockImplementationOnce(function() { return fakeAuthProvider; });
       const fakeClient = { api: vi.fn() };
       mockInitWithMiddleware.mockReturnValueOnce(fakeClient);
 
