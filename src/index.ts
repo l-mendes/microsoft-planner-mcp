@@ -12,8 +12,8 @@ const graphClient = createGraphClient();
 const planner = new PlannerService(graphClient);
 
 const server = new McpServer({
-  name: "planner-mcp-server",
-  version: "1.0.0",
+  name: "microsoft-planner-mcp",
+  version: "1.0.2",
 });
 
 // ── Tools ───────────────────────────────────────────────────────────────────
